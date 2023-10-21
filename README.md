@@ -4,3 +4,13 @@
 [suckless](https://suckless.org).  This repository hosts my dwm
 configuration, including a selection of patches hosted at [the
 suckless website](https://dwm.suckless.org/patches/).
+
+I’m using the following patches:
+
+- [Center](https://dwm.suckless.org/patches/center)
+- [Decoration hints](https://dwm.suckless.org/patches/decoration_hints/)
+- [Fix borders](https://dwm.suckless.org/patches/alpha)
+- [Full gaps toggle](https://dwm.suckless.org/patches/fullgaps)
+- [Status padding](https://dwm.suckless.org/patches/statuspadding)
+- [Swallow](https://dwm.suckless.org/patches/swallow/)
+- [Urgent border](https://dwm.suckless.org/patches/urgentborder)
