@@ -12,15 +12,11 @@ static const int vertpadbar         = 4;        /* vertical padding for statusba
 static const char *fonts[]          = { "Iosevka Nerd Font Propo:pixelsize=11:antialias=true:autohint=true" };
 static const char dmenufont[]       = "Iosevka Nerd Font Propo:pixelsize=11:antialias=true:autohint=true";
 static const char dmenuprompt[]     = "run:";
-static const char* const nord[]     = { "#2e3440", "#3b4252", "#434c5e", "#4c566a",
-                                        "#d8dee9", "#e5e9f0", "#eceff4",
-                                        "#8fbcbb", "#88c0d0", "#81a1c1", "#5e81ac",
-                                        "#bf616a", "#d08770", "#ebcb8b", "#a3be8c", "#b48ead" };
-static const char *colors[][3]      = {
+static const char *colors[][3] = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { nord[4], nord[0],  nord[0]   },
-	[SchemeSel]  = { nord[0], nord[9],  nord[9]   },
-	[SchemeUrg]  = { nord[0], nord[11], nord[11]  },
+	[SchemeNorm] = { "#eaf2ef", "#222524", "#222524" },
+	[SchemeSel]  = { "#222524", "#8fcfbb", "#8fcfbb" },
+	[SchemeUrg]  = { "#eaf2ef", "#bd1f30", "#bd1f30" },
 };
 
 /* tagging */
@@ -125,4 +121,3 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
