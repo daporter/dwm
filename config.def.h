@@ -12,11 +12,17 @@ static const int vertpadbar         = 4;        /* vertical padding for statusba
 static const char *fonts[]          = { "Iosevka Nerd Font Propo:pixelsize=11:antialias=true:autohint=true" };
 static const char dmenufont[]       = "Iosevka Nerd Font Propo:pixelsize=11:antialias=true:autohint=true";
 static const char dmenuprompt[]     = "run:";
-static const char *colors[][3] = {
+static const char col_gray1[]       = "#222222";
+static const char col_gray2[]       = "#444444";
+static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray4[]       = "#eeeeee";
+static const char col_cyan[]        = "#005577";
+static const char col_red[]         = "#780017";
+static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { "#eaf2ef", "#222524", "#222524" },
-	[SchemeSel]  = { "#222524", "#8fcfbb", "#8fcfbb" },
-	[SchemeUrg]  = { "#eaf2ef", "#bd1f30", "#bd1f30" },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	[SchemeUrg]  = { col_gray4, col_cyan,  col_red   },
 };
 
 /* tagging */
@@ -70,11 +76,15 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
+	{ MODKEY,                       XK_Down,   focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
+	{ MODKEY,                       XK_Up,     focusstack,     {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_i,      incnmaster,     {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_d,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
+	{ MODKEY|ShiftMask,             XK_Left,   setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ MODKEY|ShiftMask,             XK_Right,  setmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_Return, zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
