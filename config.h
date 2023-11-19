@@ -13,7 +13,7 @@ static const char *fonts[]          = { "Iosevka Nerd Font Propo:pixelsize=11:an
 static const char dmenufont[]       = "Iosevka Nerd Font Propo:pixelsize=11:antialias=true:autohint=true";
 static const char dmenuprompt[]     = "run:";
 static const char col_black[]       = "#000000";
-static const char col_gray1[]       = "#222222";
+static const char col_gray1[]       = "#111111";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
