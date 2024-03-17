@@ -14,3 +14,4 @@ I’m using the following patches:
 - [Status padding](https://dwm.suckless.org/patches/statuspadding)
 - [Swallow](https://dwm.suckless.org/patches/swallow/)
 - [Urgent border](https://dwm.suckless.org/patches/urgentborder)
+- [Shift Tools](https://dwm.suckless.org/patches/shift-tools/)
